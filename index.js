@@ -286,7 +286,7 @@ const person = {
 */
 /*
 -> so typically an object in javascript is the same as  a class in python where the 
--> class Classname in js is a const variable with curly brackets.
+-> class Classname in js is a const variable with curly braces.
 
 -----Accsessing Objects values-------
 -> Consider the following examples
@@ -328,7 +328,7 @@ const personB = {
     console.log(`${this.name[0]}  ${this.name[1]} is ${this.age} years old`);
   },
   introduceSelf() {
-    console.log('Hi , im ${this.name[0]}')
+    console.log(`Hi , im ${this.name[0]}`)
   }
 }
 
@@ -337,9 +337,8 @@ const personB = {
 -> any other object.
 
 -> Example of definition of a constructor function:
-
-
 */
+
 function createPerson (name) {
   const obj = {};
   obj.name = name;
@@ -348,6 +347,7 @@ function createPerson (name) {
   };
   return obj;
 }
+
 // This function creates and returns a new object each time we call it.
 // the objects have two members: a property 'name'
 // a method 'introduceSelf()' 
@@ -355,7 +355,7 @@ function createPerson (name) {
 // Example of objects created from that function
 const salva = createPerson("Salva")
 salva.name;
-salva.introduceSelf(); // Expected output: "Hi i.m Salva"
+salva.introduceSelf(); // Expected output: "Hi i'm Salva"
 
 const frankie = createPerson("Frankie");
 frankie.name;
@@ -414,7 +414,6 @@ class Professor extends Person {
     console.log(grade);
   }
 }
-
 
 /*
 -------Encapsulation----------

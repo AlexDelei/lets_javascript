@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function myFunc()
+        {
+            document.getElementById("demo").innerHTML = "Paragraph changed";
+        }
+    </script>
+</head>
+<body>
+    <h1>Learning Javascript</h1>
+    <br>
+    <!--- Writing into an HTML element -->
+    <p id="demo">Old paragraph</p>
+    <button type="button" onclick="myFunc()">Just click me and see what happens</button>
+
+    <p id="demo2"></p>
+    <script>
+        document.getElementById("demo2").innerHTML = 5 + 6;
+    </script>
+
+    <!-- Writing into the HTML output 
+        document.write() should only be used for testing
+    -->
+    <script>
+        document.write(10 + 6);
+    </script>
+
+    <button onclick="document.write(20* 100)">Multiply me</button>
+</body>
+</html>
