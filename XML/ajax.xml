@@ -1,0 +1,58 @@
+/**
+ * XML
+ * 
+ * What is XML ? XML is a software and hardware-independent tool for storing and transporting data
+ * XML stands for eXtensible Markup Language
+ * XML was designed to store and transport data
+ * XML is not a programming language, rather it is a markup language
+ * XML is a W3C Recommendation
+ * 
+ * Maybe it is a little hard to understand, but XML does not DO anything.
+ * Example
+ */
+<note>
+    <to>Henry</to>
+    <from>Alex</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend</body>
+</note>
+/**
+ * XML is just information wrapped in tags.
+ * XML does not have predefined tags
+ */
+
+
+<!--
+    AJAX XMLHttpRequest
+    - The XMLHttpRequest object can be used to exchange data with a server behind the scenes. This means
+    It is possible to update parts of a webpage without reloading the webpage
+
+    XMLHttpRequest Object Methods
+    - new XMLHttpRequest() -> creates a new XMLHttpRequest object
+    - abort() -> Cancels the current request
+    - getAllResponseHeader() -> returns header information
+    - getResponseHeader() -> return Specific header information
+    - open(method,url,async,user,pwd) -> specifies the request
+                                      -> method: the request type GET or POST
+                                      -> url:  the file location
+                                      -> async: true(asynchronous) or false(asynchronous)
+                                      -> user: optional username
+                                      -> psw: optional password
+
+    - send() -> sends the (GET) request to the server.
+    - send(string) -> sends the (POST) request to the server
+    - setRequestHeader() -> adds a label/value pair to the header to be sent
+
+    XMLHttpRequest Object Properties
+    - onreadystatechange -> Defines a function to be called when the readyState property changes.
+    - readyState -> Holds the status of the XMLHttpRequest
+                 -> 0: request not initialised
+                 -> 1: server connection established
+                 -> 2: request received
+                 -> 3: processing request
+                 -> 4: request finished and response is ready
+    - responseText -> returns the response data as a string
+    - reponseXML -> returns the response data as XML data
+    - status -> returns the status-number of the request
+    - statusText -> returns the status-text(e.g "OK" or "Not Found")
+-->
